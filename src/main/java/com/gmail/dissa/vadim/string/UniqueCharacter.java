@@ -25,16 +25,18 @@ public class UniqueCharacter {
         List<Character> foundChars = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
-            int count = 0;
-            for (int k = i + 1; k < arr.length; k++) {
-                if (arr[i] == arr[k]) {
-                    count++;
-                    foundChars.add(arr[i]);
-                    break;
+            if (!foundChars.contains(arr[i])) {
+                int count = 0;
+                for (int k = i + 1; k < arr.length; k++) {
+                    if (arr[i] == arr[k]) {
+                        count++;
+                        foundChars.add(arr[i]);
+                        break;
+                    }
                 }
-            }
-            if (count == 0 && !foundChars.contains(arr[i])) {
-                return i;
+                if (count == 0) {
+                    return i;
+                }
             }
         }
         return -1;
