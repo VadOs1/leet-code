@@ -1,4 +1,4 @@
-package com.gmail.dissa.vadim.leet.string;
+package com.gmail.dissa.vadim.string;
 
 /*
  * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
