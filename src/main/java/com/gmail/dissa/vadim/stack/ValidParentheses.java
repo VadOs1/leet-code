@@ -1,4 +1,4 @@
-package com.gmail.dissa.vadim.leet.stack;
+package com.gmail.dissa.vadim.stack;
 
 import java.util.ArrayDeque;
 
